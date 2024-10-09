@@ -1,0 +1,9 @@
+.login-page {
+  flex-grow: 1;
+  display: flex;
+}
+
+.login-page iframe {
+  display: block;
+  width: 100%;
+}
