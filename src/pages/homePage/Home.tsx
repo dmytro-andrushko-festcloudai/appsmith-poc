@@ -1,9 +1,18 @@
 import "./styles.css";
 
 const Home = () => {
+  const send = ()=>{
+    const iFrame = document.getElementById("embeddedAppsmith") as any;
+    //Send the message in postMessage
+    //replace the "<Appsmith_hosted_url>" with your Appsmith domain
+    iFrame.contentWindow.postMessage('Hello from Meta4', "<Appsmith_hosted_url>");
+  };
+
+
   return (
     <>
       <div className="home-page">
+        <button onClick={send}>Send to the Appsmith</button>
         <iframe
           id="embeddedAppsmith"
           frameBorder="0"
