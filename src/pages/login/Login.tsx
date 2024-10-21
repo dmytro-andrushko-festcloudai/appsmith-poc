@@ -3,7 +3,7 @@ import "./styles.css";
 const Login = () => {
   const send = () => {
     const iFrame = document.getElementById("embeddedAppsmith") as any;
-    iFrame.contentWindow.postMessage("Hello from Meta4", "*");
+    iFrame.contentWindow.postMessage("Hello from Meta4", "https://dmytro-andrushko-festcloudai.github.io");
   };
 
   return (
