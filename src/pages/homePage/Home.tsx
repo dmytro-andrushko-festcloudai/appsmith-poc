@@ -5,7 +5,7 @@ const Home = () => {
     const iFrame = document.getElementById("embeddedAppsmith") as any;
     //Send the message in postMessage
     //replace the "<Appsmith_hosted_url>" with your Appsmith domain
-    iFrame.contentWindow.postMessage('Hello from Meta4', "<Appsmith_hosted_url>");
+    iFrame.contentWindow.postMessage('Hello from Meta4', "https://appsmith-dev.srv.festcloud.ai/app/my-first-application/employee-67038f786c61df06c4ecdf28?embed=true");
   };
 
 
