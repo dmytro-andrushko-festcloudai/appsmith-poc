@@ -1,0 +1,23 @@
+.login-page {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+
+.login-page iframe {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+ 
+}
+
+.login-page .filters {
+  width: 600px;
+}
+
+.login-page button {
+  width: 300px;
+}

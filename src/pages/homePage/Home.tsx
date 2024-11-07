@@ -14,7 +14,7 @@ const Home = () => {
     //replace the "<Appsmith_hosted_url>" with your Appsmith domain
     iFrame.contentWindow.postMessage(
       "Hello from Meta4",
-      "https://appsmith-dev.srv.festcloud.ai/app/my-first-application/employee-67038f786c61df06c4ecdf28?embed=true"
+      "*"
     );
   };
 
@@ -25,7 +25,7 @@ const Home = () => {
         <iframe
           id="embeddedAppsmith"
           frameBorder="0"
-          src="https://appsmith-dev.srv.festcloud.ai/app/my-first-application/employee-67038f786c61df06c4ecdf28?embed=true"
+          src="https://appsmith-dev.srv.festcloud.ai/app/my-first-application/page1-6704cfab6c61df06c4ecdf6f?embed=true"
         />
       </div>
     </>
