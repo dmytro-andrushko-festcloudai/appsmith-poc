@@ -1,21 +1,19 @@
 import "./styles.css";
 
 const EmployeeList = () => {
-  const sendData = () => {
-    const iFrame = document.getElementById("iframeId") as any;
+  const getCookies = () => {
+    const authToken = localStorage.getItem("token-cacascsacsacas");
 
-    iFrame.contentWindow.postMessage(
-      {
-        sso_access_token: "123456",
-        auth_access_token: "6543322",
+    fetch("https://dev.appsmith.com/api/v1/app-templates/filters", {
+      headers: {
+        Authorization: `Bearer ${authToken}`,
       },
-      "*"
-    );
+    });
   };
 
   return (
     <div className="login-page">
-      <button onClick={sendData}>Send data</button>
+      <button onClick={getCookies}>Send data</button>
 
       <iframe
         id="iframeId"
